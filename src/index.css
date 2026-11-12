@@ -381,6 +381,45 @@
     @apply card-hover;
   }
 
+  .skill-badge {
+    @apply inline-flex items-center rounded-full border border-sky-200 bg-sky-50 px-3 py-1.5 text-[11px] font-medium text-sky-800;
+    transition:
+      transform var(--transition-duration-normal) var(--ease-ease-out-expo),
+      background-color var(--transition-duration-normal) ease,
+      border-color var(--transition-duration-normal) ease,
+      box-shadow var(--transition-duration-normal) ease;
+  }
+
+  .skill-badge:hover {
+    @apply -translate-y-0.5 border-sky-300 bg-sky-100;
+    box-shadow: 0 4px 12px -4px rgb(14 165 233 / 0.28);
+  }
+
+  :root[data-theme='dark'] .skill-badge {
+    @apply border-sky-300/25 bg-sky-400/10 text-sky-200;
+  }
+
+  :root[data-theme='dark'] .skill-badge:hover {
+    @apply border-sky-300/45 bg-sky-400/15;
+    box-shadow: 0 4px 12px -4px rgb(56 189 248 / 0.2);
+  }
+
+  .section-card-hover {
+    transition:
+      border-color var(--transition-duration-normal) ease,
+      box-shadow var(--transition-duration-normal) ease;
+  }
+
+  .section-card-hover:hover {
+    border-color: rgb(125 211 252 / 0.65);
+    box-shadow: 0 14px 32px -14px rgb(14 165 233 / 0.28);
+  }
+
+  :root[data-theme='dark'] .section-card-hover:hover {
+    border-color: rgb(56 189 248 / 0.4);
+    box-shadow: 0 14px 32px -14px rgb(56 189 248 / 0.18);
+  }
+
   .text-balance {
     text-wrap: balance;
   }

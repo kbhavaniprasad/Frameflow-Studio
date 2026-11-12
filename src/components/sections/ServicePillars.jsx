@@ -31,10 +31,10 @@ export function ServicePillars() {
           return (
             <motion.div
               key={pillar.id}
-              whileHover={{ y: -8 }}
+              whileHover={{ y: -4 }}
               className="group relative"
             >
-              <Card variant="gradient-border" padding="lg" className="h-full">
+              <Card variant="gradient-border" padding="lg" className="section-card-hover h-full">
                 <div className="flex items-center gap-3 mb-5">
                   <div className="w-11 h-11 rounded-2xl flex items-center justify-center bg-primary-500/10 text-primary-400 shadow-lg shadow-primary-500/20">
                     <Icon className="w-5 h-5" aria-hidden="true" />
@@ -72,7 +72,7 @@ export function ServicePillars() {
                   {pillar.techStack.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1.5 rounded-full text-[11px] font-medium border border-neutral-200/60 bg-white/60 text-neutral-600 backdrop-blur dark:border-neutral-700 dark:bg-neutral-800/60 dark:text-neutral-300"
+                      className="skill-badge"
                     >
                       {tech}
                     </span>

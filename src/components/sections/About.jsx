@@ -34,10 +34,10 @@ export function About() {
           return (
             <motion.div
               key={member.id}
-              whileHover={{ y: -6 }}
+              whileHover={{ y: -4 }}
               className="group"
             >
-              <Card variant="interactive" padding="lg" className="h-full">
+              <Card variant="interactive" padding="lg" className="section-card-hover h-full">
                 <div className="mb-4">
                   <h3 className="text-heading-md font-bold text-neutral-900 dark:text-white">
                     {member.name}
@@ -49,11 +49,11 @@ export function About() {
                 <p className="text-body-sm text-neutral-600 dark:text-neutral-400 leading-relaxed mb-5">
                   {member.bio}
                 </p>
-                <div className="space-y-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-6">
                   {member.specialties.map((spec) => (
                     <span
                       key={spec}
-                      className="inline-block px-3 py-1.5 rounded-full text-[11px] font-medium border border-neutral-200/60 bg-white/60 text-neutral-600 backdrop-blur group-hover:border-primary-300 group-hover:text-primary-700 dark:border-neutral-700 dark:bg-neutral-800/60 dark:text-neutral-300 dark:group-hover:border-primary-400 dark:group-hover:text-primary-400 transition-colors"
+                      className="skill-badge"
                     >
                       {spec}
                     </span>

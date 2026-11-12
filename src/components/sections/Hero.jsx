@@ -90,7 +90,7 @@ export function Hero() {
             className="relative z-10"
             style={{ transform: 'rotate(-6deg)' }}
           >
-            <div className="relative w-64 h-[960px] rounded-3xl border border-neutral-700 bg-black shadow-2xl overflow-hidden ring-1 ring-white/10">
+            <div className="relative flex w-64 h-[420px] md:h-[500px] xl:h-[560px] flex-col rounded-3xl border border-neutral-700 bg-black shadow-2xl overflow-hidden ring-1 ring-white/10">
               <div className="absolute inset-0 bg-gradient-to-b from-neutral-900 to-black" />
               <div className="flex items-center justify-center gap-2 px-4 pt-6">
                 <div className="w-16 h-2 rounded-full bg-neutral-800" aria-hidden="true" />
@@ -106,8 +106,8 @@ export function Hero() {
                   <span className="text-[10px] text-neutral-400">84%</span>
                 </div>
               </div>
-              <div className="relative flex items-center justify-center h-full bg-neutral-950 p-1">
-                <div className="relative w-full h-[calc(100%-4rem)] rounded-2xl border border-neutral-700 bg-neutral-900 overflow-hidden group">
+              <div className="relative flex min-h-0 flex-1 items-center justify-center bg-neutral-950 p-1">
+                <div className="relative w-full h-full rounded-2xl border border-neutral-700 bg-neutral-900 overflow-hidden group">
                   <img
                     src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80"
                     alt="Short-form video preview"
@@ -148,7 +148,7 @@ export function Hero() {
             className="relative z-20"
             style={{ transform: 'rotate(4deg)' }}
           >
-            <div className="relative w-full max-w-sm h-[760px] rounded-3xl border border-neutral-700 bg-neutral-900 shadow-2xl overflow-hidden ring-1 ring-white/10 -mt-16 ml-4">
+            <div className="relative flex w-full max-w-sm h-[360px] md:h-[420px] xl:h-[480px] flex-col rounded-3xl border border-neutral-700 bg-neutral-900 shadow-2xl overflow-hidden ring-1 ring-white/10 -mt-16 ml-4">
               <div className="absolute inset-0 bg-gradient-to-b from-neutral-800 to-neutral-950" />
               <div className="h-10 bg-neutral-800 border-b border-neutral-700 flex items-center px-4">
                 <div className="flex gap-1.5">
@@ -161,8 +161,8 @@ export function Hero() {
                   <span>nexora.io • React App</span>
                 </div>
               </div>
-              <div className="p-6 h-full flex flex-col">
-                <div className="flex-1 overflow-hidden bg-black rounded-xl border border-neutral-700 relative">
+              <div className="min-h-0 flex-1 p-5 flex flex-col">
+                <div className="min-h-0 flex-1 overflow-hidden bg-black rounded-xl border border-neutral-700 relative">
                   <img
                     src="https://images.unsplash.com/photo-1460925895917-afbe65ae8364?w=800&q=80"
                     alt="Web app preview"
