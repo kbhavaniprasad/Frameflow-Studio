@@ -1,0 +1,18 @@
+# Robots.txt for [VERIFY] Brand Name Portfolio
+# Replace with your actual domain
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://[VERIFY]yourdomain.com/sitemap.xml
+
+# Disallow admin/private areas (if any)
+Disallow: /api/
+Disallow: /_next/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /.git/
+
+# Crawl-delay (optional)
+# Crawl-delay: 10
