@@ -13,7 +13,7 @@ export function Hero() {
 
   return (
     <Section id="hero" size="xl" background="dark">
-      <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 lg:gap-16 items-center">
+      <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-16 items-center">
         <div className="space-y-6">
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -83,14 +83,14 @@ export function Hero() {
           </motion.div>
         </div>
 
-        <div className="relative hidden sm:flex gap-8 items-center" data-theme-media>
+        <div className="relative hidden sm:flex gap-8 lg:gap-2 xl:gap-2 items-center justify-center lg:justify-start" data-theme-media>
           <motion.div
             whileHover={{ y: -8 }}
             transition={{ type: 'spring', stiffness: 300, damping: 25 }}
             className="relative z-10"
             style={{ transform: 'rotate(-6deg)' }}
           >
-            <div className="relative flex w-64 h-[420px] md:h-[500px] xl:h-[560px] flex-col rounded-3xl border border-neutral-700 bg-black shadow-2xl overflow-hidden ring-1 ring-white/10">
+            <div className="relative flex w-64 lg:w-44 xl:w-56 h-[420px] md:h-[500px] xl:h-[560px] flex-col rounded-3xl border border-neutral-700 bg-black shadow-2xl overflow-hidden ring-1 ring-white/10">
               <div className="absolute inset-0 bg-gradient-to-b from-neutral-900 to-black" />
               <div className="flex items-center justify-center gap-2 px-4 pt-6">
                 <div className="w-16 h-2 rounded-full bg-neutral-800" aria-hidden="true" />
@@ -148,7 +148,7 @@ export function Hero() {
             className="relative z-20"
             style={{ transform: 'rotate(4deg)' }}
           >
-            <div className="relative flex w-full max-w-sm h-[360px] md:h-[420px] xl:h-[480px] flex-col rounded-3xl border border-neutral-700 bg-neutral-900 shadow-2xl overflow-hidden ring-1 ring-white/10 -mt-16 ml-4">
+            <div className="relative flex w-full max-w-sm lg:max-w-56 xl:max-w-80 h-[360px] md:h-[420px] xl:h-[480px] flex-col rounded-3xl border border-neutral-700 bg-neutral-900 shadow-2xl overflow-hidden ring-1 ring-white/10 -mt-16 ml-4 lg:ml-0">
               <div className="absolute inset-0 bg-gradient-to-b from-neutral-800 to-neutral-950" />
               <div className="h-10 bg-neutral-800 border-b border-neutral-700 flex items-center px-4">
                 <div className="flex gap-1.5">

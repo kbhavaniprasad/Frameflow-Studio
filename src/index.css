@@ -230,6 +230,8 @@
     --theme-text-secondary: #475569;
     --theme-text-muted: #64748b;
     --theme-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.03);
+    --theme-shadow-hover: 0 12px 28px -16px rgb(15 23 42 / 0.22), 0 0 0 1px rgb(79 70 229 / 0.04);
+    --theme-shadow-control-hover: 0 5px 14px -8px rgb(15 23 42 / 0.24);
     --color-header-bg: color-mix(in srgb, var(--color-card) 85%, transparent);
     --color-mobile-menu-bg: color-mix(in srgb, var(--color-card) 96%, transparent);
   }
@@ -288,6 +290,8 @@
     --theme-text-secondary: #e5e5e5;
     --theme-text-muted: #b3b3b3;
     --theme-shadow: 0 16px 36px -8px rgb(0 0 0 / 0.55);
+    --theme-shadow-hover: 0 16px 32px -20px rgb(0 0 0 / 0.7), 0 0 18px -8px rgb(56 189 248 / 0.2);
+    --theme-shadow-control-hover: 0 6px 16px -10px rgb(0 0 0 / 0.65), 0 0 10px -5px rgb(56 189 248 / 0.2);
     --color-header-bg: color-mix(in srgb, var(--color-card) 88%, transparent);
     --color-mobile-menu-bg: color-mix(in srgb, var(--color-card) 96%, transparent);
   }
@@ -709,6 +713,51 @@ select {
 
 :root[data-theme='light'] .shadow-elevated {
   box-shadow: var(--shadow-shadow-elevated);
+}
+
+.ui-card,
+.interactive-surface {
+  transition:
+    translate var(--transition-duration-normal) var(--ease-ease-out-expo),
+    border-color var(--transition-duration-normal) ease,
+    box-shadow var(--transition-duration-normal) ease;
+}
+
+.ui-card:hover,
+.interactive-surface:hover {
+  translate: 0 -2px;
+  border-color: color-mix(in srgb, var(--color-primary-400) 38%, var(--color-border));
+  box-shadow: var(--theme-shadow-hover);
+}
+
+.ui-button {
+  transition:
+    translate var(--transition-duration-normal) var(--ease-ease-out-expo),
+    box-shadow var(--transition-duration-normal) ease,
+    background-color var(--transition-duration-normal) ease,
+    border-color var(--transition-duration-normal) ease,
+    color var(--transition-duration-normal) ease;
+}
+
+.ui-button:not(:disabled):hover {
+  translate: 0 -1px;
+  box-shadow: var(--theme-shadow-control-hover);
+}
+
+.ui-button:not(:disabled):active {
+  translate: 0 0;
+}
+
+.interactive-control {
+  transition:
+    box-shadow var(--transition-duration-normal) ease,
+    border-color var(--transition-duration-normal) ease,
+    background-color var(--transition-duration-normal) ease,
+    color var(--transition-duration-normal) ease;
+}
+
+.interactive-control:hover {
+  box-shadow: var(--theme-shadow-control-hover);
 }
 
 @layer utilities {

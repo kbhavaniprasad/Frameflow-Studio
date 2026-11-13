@@ -3,7 +3,7 @@ import { cn } from '../../utils/helpers';
 
 export const Button = forwardRef(({ children, variant = 'primary', size = 'md', isLoading = false, leftIcon, rightIcon, fullWidth = false, className, disabled, ...props }, ref) => {
   const baseStyles =
-    'inline-flex items-center justify-center gap-2 font-medium transition-all duration-200 ease-premium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none';
+    'ui-button inline-flex items-center justify-center gap-2 font-medium transition-all duration-300 ease-premium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none';
 
   const variantStyles = {
     primary: 'bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800 focus-visible:ring-primary-500 shadow-sm hover:shadow-md',

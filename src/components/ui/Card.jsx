@@ -2,7 +2,7 @@ import { forwardRef } from 'react';
 import { cn } from '../../utils/helpers';
 
 export const Card = forwardRef(({ children, variant = 'default', padding = 'md', className, ...props }, ref) => {
-  const baseStyles = 'rounded-2xl border border-[var(--color-border)] bg-[var(--color-card)] transition-all duration-300 ease-premium';
+  const baseStyles = 'ui-card rounded-2xl border border-[var(--color-border)] bg-[var(--color-card)] transition-all duration-300 ease-premium';
 
   const variantStyles = {
     default: 'hover:border-neutral-300 hover:shadow-lg',

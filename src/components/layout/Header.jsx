@@ -92,11 +92,11 @@ export function Header() {
                   }}
                   className="btn-ghost hidden sm:inline-flex text-sm font-semibold text-neutral-600 dark:text-neutral-300"
                 >
-                  Book Strategy Call <ArrowRight className="ml-1.5 w-3 h-3" aria-hidden="true" />
+                  Book Strategy Call <ArrowRight className="ml-1.5 w-3 h-3 text-primary-600 dark:text-primary-400" aria-hidden="true" />
                 </button>
                 <button
                   onClick={toggleTheme}
-                  className="p-2 rounded-lg text-neutral-600 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-800 transition-colors"
+                  className="interactive-control p-2 rounded-lg text-neutral-600 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-800 transition-colors"
                   aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
                   title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
                 >
@@ -106,7 +106,7 @@ export function Header() {
 
               {/* Mobile Menu Button */}
               <button
-                className="lg:hidden p-2 rounded-lg text-neutral-600 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-800 transition-colors"
+                className="interactive-control lg:hidden p-2 rounded-lg text-neutral-600 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-800 transition-colors"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 aria-expanded={mobileMenuOpen}
                 aria-controls="mobile-menu"

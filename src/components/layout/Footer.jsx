@@ -210,7 +210,7 @@ export function Footer() {
                 href={businessInfo.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg border border-[var(--color-border)] bg-[var(--color-card)]/20 flex items-center justify-center text-[var(--color-muted-foreground)] hover:text-white hover:border-primary-500 hover:bg-primary-500/10 transition-all"
+                className="interactive-control w-9 h-9 rounded-lg border border-[var(--color-border)] bg-[var(--color-card)]/20 flex items-center justify-center text-[var(--color-muted-foreground)] hover:text-white hover:border-primary-500 hover:bg-primary-500/10 transition-all"
                 aria-label="Instagram"
               >
                 <InstagramIcon className="w-4 h-4" aria-hidden="true" />
@@ -219,7 +219,7 @@ export function Footer() {
                 href={businessInfo.social.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg border border-[var(--color-border)] bg-[var(--color-card)]/20 flex items-center justify-center text-[var(--color-muted-foreground)] hover:text-white hover:border-red-500 hover:bg-red-500/10 transition-all"
+                className="interactive-control w-9 h-9 rounded-lg border border-[var(--color-border)] bg-[var(--color-card)]/20 flex items-center justify-center text-[var(--color-muted-foreground)] hover:text-white hover:border-red-500 hover:bg-red-500/10 transition-all"
                 aria-label="YouTube"
               >
                 <YoutubeIcon className="w-4 h-4" aria-hidden="true" />
@@ -228,7 +228,7 @@ export function Footer() {
                 href={businessInfo.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg border border-[var(--color-border)] bg-[var(--color-card)]/20 flex items-center justify-center text-[var(--color-muted-foreground)] hover:text-white hover:border-blue-500 hover:bg-blue-500/10 transition-all"
+                className="interactive-control w-9 h-9 rounded-lg border border-[var(--color-border)] bg-[var(--color-card)]/20 flex items-center justify-center text-[var(--color-muted-foreground)] hover:text-white hover:border-blue-500 hover:bg-blue-500/10 transition-all"
                 aria-label="LinkedIn"
               >
                 <LinkedinIcon className="w-4 h-4" aria-hidden="true" />

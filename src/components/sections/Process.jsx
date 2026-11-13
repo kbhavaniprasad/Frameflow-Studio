@@ -63,7 +63,7 @@ export function Process() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.4 }}
-              className="flex items-start gap-4 rounded-2xl border border-neutral-200/60 p-5 bg-[var(--color-card)] shadow-sm dark:border-neutral-700/40"
+              className="interactive-surface flex items-start gap-4 rounded-2xl border border-neutral-200/60 p-5 bg-[var(--color-card)] shadow-sm dark:border-neutral-700/40"
             >
               <div className="w-10 h-10 rounded-xl bg-primary-500/10 flex items-center justify-center text-primary-500 shrink-0">
                 <Icon className="w-5 h-5" aria-hidden="true" />

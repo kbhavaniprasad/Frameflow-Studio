@@ -34,7 +34,7 @@ export function Portfolio() {
                     onClick={() => {
                       window.open(item.videoUrl, '_blank', 'noopener,noreferrer');
                     }}
-                    className="w-14 h-14 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white shadow-xl shadow-black/40 hover:scale-110 hover:bg-black/80 transition-all border border-white/20"
+                    className="interactive-control w-14 h-14 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white shadow-xl shadow-black/40 hover:scale-110 hover:bg-black/80 transition-all border border-white/20"
                     aria-label={`Watch ${item.title}`}
                   >
                     <Play className="w-6 h-6" aria-hidden="true" />
@@ -80,7 +80,7 @@ export function Portfolio() {
                         onClick={() => {
                           if (item.liveUrl) window.open(item.liveUrl, '_blank', 'noopener,noreferrer');
                         }}
-                        className="w-12 h-12 rounded-full bg-[var(--color-card)] flex items-center justify-center text-[var(--color-card-foreground)] shadow-xl hover:scale-110 hover:bg-primary-600 hover:text-white transition-all border border-[var(--color-border)]"
+                        className="interactive-control w-12 h-12 rounded-full bg-[var(--color-card)] flex items-center justify-center text-[var(--color-card-foreground)] shadow-xl hover:scale-110 hover:bg-primary-600 hover:text-white transition-all border border-[var(--color-border)]"
                         aria-label={`Live demo: ${item.title}`}
                         disabled={!item.liveUrl}
                       >
